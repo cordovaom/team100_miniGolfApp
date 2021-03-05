@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
+    android:scrollbarTrackVertical="@drawable/home"
     tools:context=".EditCourse">
 
     <Button
@@ -26,7 +27,7 @@
         android:id="@+id/courseName"
         android:layout_width="281dp"
         android:layout_height="60dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="68dp"
         android:autofillHints=""
         android:background="@drawable/back"
         android:ems="10"
@@ -41,13 +42,24 @@
         android:id="@+id/textView"
         android:layout_width="96dp"
         android:layout_height="23dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:text="@string/course_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
 
     <ScrollView
         android:layout_width="280dp"

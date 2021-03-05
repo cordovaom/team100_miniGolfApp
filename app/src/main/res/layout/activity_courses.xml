@@ -17,8 +17,7 @@
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_manage"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@android:drawable/ic_menu_manage" />
 
     <TextView
         android:id="@+id/textView"
