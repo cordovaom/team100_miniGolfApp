@@ -16,11 +16,11 @@ public class Results extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-        Boolean playerOneWins = getIntent().getBooleanExtra("playerOneWins", false);
+        Boolean winner = getIntent().getBooleanExtra("playerOneWins", false);
         //TextView winner = findViewById(R.id.resultsWinner);
         //winner.setText(getIntent().getStringExtra("winner"));
 
-        if(playerOneWins){
+        if(winner){
             ((View)findViewById(R.id.playerOneView)).setVisibility(View.VISIBLE);
         } else {
             ((View)findViewById(R.id.playerTwoView)).setVisibility(View.VISIBLE);
