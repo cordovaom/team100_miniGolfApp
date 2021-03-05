@@ -23,6 +23,8 @@
     <string name="sixteen">16</string>
     <string name="seventeen">17</string>
     <string name="eighteen">18</string>
-
+    <string name="settings">Settings</string>
+    <string name="todo">TODO</string>
+    <string name="courses">Courses</string>
 
 </resources>
