@@ -27,7 +27,7 @@ private ImageButton settings_Button;
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(view.getContext() , ScoreCard.class));
+                startActivity(new Intent(view.getContext() , CreateNewGame.class));
             }
         });
 
