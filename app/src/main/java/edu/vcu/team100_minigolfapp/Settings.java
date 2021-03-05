@@ -41,7 +41,7 @@ public class Settings extends AppCompatActivity {
         startActivity(intent);
     }
     public void openCourse(){
-        Intent intentTwo = new Intent(this,Courses.class);
+        Intent intentTwo = new Intent(this,EditCourse.class);
         startActivity(intentTwo);
     }
 }

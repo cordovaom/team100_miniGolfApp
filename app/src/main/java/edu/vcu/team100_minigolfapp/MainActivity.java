@@ -23,8 +23,10 @@ private ImageButton settings_Button;
         });
     }
 public void openSettings(){
-   Intent intent = new Intent(this,Settings.class);
-    startActivity(intent);
+        int a = 5;
+        Intent intent = new Intent(this,Settings.class);
+        intent.putExtra("playerOneWins", true);
+        startActivity(intent);
 }
 
 }
