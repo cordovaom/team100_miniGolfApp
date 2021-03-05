@@ -16,13 +16,21 @@ public class Results extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-        TextView winner = findViewById(R.id.resultsWinner);
-        winner.setText(getIntent().getStringExtra("winner"));
+        Boolean playerOneWins = getIntent().getBooleanExtra("playerOneWins", false);
+        //TextView winner = findViewById(R.id.resultsWinner);
+        //winner.setText(getIntent().getStringExtra("winner"));
+
+        if(playerOneWins){
+            ((View)findViewById(R.id.playerOneView)).setVisibility(View.VISIBLE);
+        } else {
+            ((View)findViewById(R.id.playerTwoView)).setVisibility(View.VISIBLE);
+        }
 
         Button home = findViewById(R.id.resultsHome);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((View)findViewById(R.id.playerOneView)).setVisibility(View.INVISIBLE);
                 Intent intent = new Intent(v.getContext(), MainActivity.class);
                 startActivity(intent);
             }
@@ -32,6 +40,7 @@ public class Results extends AppCompatActivity {
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((View)findViewById(R.id.playerTwoView)).setVisibility(View.INVISIBLE);
                 Intent intent = new Intent(v.getContext(), Settings.class);
                 startActivity(intent);
             }

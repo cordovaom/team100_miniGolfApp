@@ -5,6 +5,10 @@
     <string name="name">Name</string>
     <string name="par">Par</string>
     <string name="save">Save</string>
+
+    <string name="playerOne">Player One Wins</string>
+    <string name="playerTwo">Player Two Wins</string>
+
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
