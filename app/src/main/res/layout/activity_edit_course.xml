@@ -9,26 +9,688 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="83dp"
-        android:layout_marginBottom="84dp"
-        android:text="Save"
+        android:layout_width="133dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/save"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/courseName"
-        android:layout_width="217dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:autofillHints=""
+        android:background="@drawable/back"
         android:ems="10"
         android:inputType="textPersonName"
         android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="96dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/course_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="280dp"
+        android:layout_height="335dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintVertical_bias="0.468">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeNumberLabe"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/hole_number" />
+
+                <TextView
+                    android:id="@+id/holeNameLabe"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/holeParLabe"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/par" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeOneLabel"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/one"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeOneName"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/holeOnePar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeTwoNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/two"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeTwoName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeTwoPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeThreeNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/three"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeThreeName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeThreePar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeFourNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/four"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeFourName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeFourPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeFiveNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/five"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeFiveName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeFivePar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeSixNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/six"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeSixName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeSixPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeSevenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/seven"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeSevenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeSevenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeEightNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/eight"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeEightName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeEightPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeNineNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/nine"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeNineName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeNinePar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeTenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/ten"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeTenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeTenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeElevenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/eleven"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeElevenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeElevenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeTwelveNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/twelve"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeTwelveName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeTwelvePar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeThirteenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/thirteen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeThirteenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeThirteenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeFourteenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/fourteen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeFourteenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeFourteenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeFifteenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/fifteen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeFifteenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeFifteenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeSixteenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/sixteen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeSixteenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeSixteenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeSeventeenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/seventeen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeSeventeenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeSeventeenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/holeEighteenNumber"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/eighteen"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/holeEighteenName"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/holeEighteenPar"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="number" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
