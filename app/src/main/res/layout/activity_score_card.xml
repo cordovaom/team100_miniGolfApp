@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
         android:text="@string/save"
+        android:textColor="#FFFFFF"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
@@ -26,6 +28,7 @@
         android:layout_marginEnd="52dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/done"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/scorecardSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scorecardSave"
