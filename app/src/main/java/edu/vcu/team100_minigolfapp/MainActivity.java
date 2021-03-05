@@ -7,7 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+import android.widget.ImageButton;
+
+
 public class MainActivity extends AppCompatActivity {
+private ImageButton settings_Button;
+
 
     Button newGameButton;
 
@@ -15,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         newGameButton = findViewById(R.id.newGameButton);
@@ -31,6 +38,34 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+        settings_Button =(ImageButton) findViewById(R.id.settings);
+        settings_Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSettings();
+            }
+        });
+
+
+
+
+
+
+
+
+    }
+
+
+    public void openSettings(){
+        Intent intent = new Intent(this,Settings.class);
+        intent.putExtra("playerOneWins", true);
+        startActivity(intent);
+}
+    public void openScore(){
+        Intent intent = new Intent(this,ScoreCard.class);
+        startActivity(intent);
 
     }
 }
