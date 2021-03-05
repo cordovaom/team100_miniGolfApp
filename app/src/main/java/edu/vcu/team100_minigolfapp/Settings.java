@@ -14,14 +14,17 @@ public class Settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        //setting buton to go back to settings may not be needed
+        //setting button to go back to settings may not be needed
         settings_Button =(ImageButton) findViewById(R.id.settings);
         settings_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.openSettings();
+                openSettings();
             }
         });
     }
-
+    public void openSettings(){
+        Intent intent = new Intent(this,Settings.class);
+        startActivity(intent);
+    }
 }

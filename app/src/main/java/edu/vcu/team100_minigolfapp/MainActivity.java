@@ -22,8 +22,8 @@ private ImageButton settings_Button;
             }
         });
     }
-public static void openSettings(){
-    Intent intent = new Intent(this,Settings.class);
+public void openSettings(){
+   Intent intent = new Intent(this,Settings.class);
     startActivity(intent);
 }
 

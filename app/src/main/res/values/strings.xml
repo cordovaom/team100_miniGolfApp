@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">team100_miniGolfApp</string>
+    <string name="courses">Courses</string>
+    <string name="settings">Settings</string>
 </resources>
