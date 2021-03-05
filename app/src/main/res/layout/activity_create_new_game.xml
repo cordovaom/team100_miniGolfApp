@@ -61,13 +61,13 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createGameBanner"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.014" />
 
     <TextView
         android:id="@+id/playerOneBanner"
@@ -90,7 +90,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gameNameInput" />
 
@@ -111,11 +111,11 @@
         android:id="@+id/playerTwoNameInput"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/playerTwoBanner"
         app:layout_constraintTop_toBottomOf="@+id/playerOneNameInput" />
 
@@ -136,11 +136,11 @@
         android:id="@+id/playerThreeNameInput"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/playerThreeNameBanner"
         app:layout_constraintTop_toBottomOf="@+id/playerTwoNameInput" />
 
@@ -161,11 +161,11 @@
         android:id="@+id/playerFourNameInput"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playerThreeNameInput" />
 
