@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 private ImageButton settings_Button;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +24,18 @@ private ImageButton settings_Button;
                 openSettings();
             }
         });
+
+
+
+
+
+
+
+
     }
-public void openSettings(){
-        int a = 5;
+
+
+    public void openSettings(){
         Intent intent = new Intent(this,Settings.class);
         intent.putExtra("playerOneWins", true);
         startActivity(intent);
