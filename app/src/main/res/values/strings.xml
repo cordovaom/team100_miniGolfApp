@@ -27,4 +27,7 @@
     <string name="todo">TODO</string>
     <string name="courses">Courses</string>
 
+
+    <string name="home">Home</string>
+    <string name="done">Done</string>
 </resources>
