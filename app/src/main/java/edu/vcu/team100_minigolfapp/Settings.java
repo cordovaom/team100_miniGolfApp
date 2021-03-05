@@ -16,7 +16,7 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         //setting button to go back to settings may not be needed
-        settings_Button =(ImageButton) findViewById(R.id.settings);
+        //settings_Button =(ImageButton) findViewById(R.id.settings);
         course_Button =(Button) findViewById(R.id.courses_button);
 
         //listener for courses button
@@ -28,18 +28,18 @@ public class Settings extends AppCompatActivity {
             }
         });
         //listner for settings
-        settings_Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettings();
-
-            }
-        });
+//        settings_Button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openSettings();
+//
+//            }
+//        });
     }
-    public void openSettings(){
-        Intent intent = new Intent(this,Settings.class);
-        startActivity(intent);
-    }
+//    public void openSettings(){
+//        Intent intent = new Intent(this,Settings.class);
+//        startActivity(intent);
+//    }
     public void openCourse(){
         Intent intentTwo = new Intent(this,EditCourse.class);
         startActivity(intentTwo);

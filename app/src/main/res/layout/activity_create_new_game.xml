@@ -5,6 +5,7 @@
     android:id="@+id/createNewGameBanner"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context=".CreateNewGame">
 
     <TextView
@@ -18,7 +19,7 @@
         android:text="Create New Game"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#D567635D"
+        android:textColor="#D5302F2D"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +34,7 @@
         android:layout_width="54dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
@@ -186,7 +188,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="#ff8C00"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

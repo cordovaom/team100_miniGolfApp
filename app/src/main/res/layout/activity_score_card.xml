@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     tools:context=".ScoreCard">
 
     <Button
         android:id="@+id/scorecardSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="#ff8C00"
         android:text="@string/save"
         android:textColor="#FFFFFF"
 
@@ -26,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="#ff8C00"
         android:text="@string/done"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/scorecardSave"
@@ -111,8 +112,8 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
                         android:inputType="number"
+                        android:background="@drawable/back"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -125,7 +126,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -154,7 +155,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -168,7 +169,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -197,7 +198,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -211,7 +212,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -240,7 +241,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -254,7 +255,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -283,7 +284,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -297,7 +298,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -326,7 +327,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -340,7 +341,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -369,7 +370,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -383,7 +384,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -412,7 +413,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -426,7 +427,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -455,7 +456,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -469,7 +470,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -498,7 +499,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -512,7 +513,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -541,7 +542,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -555,7 +556,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -583,7 +584,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -597,7 +598,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -625,7 +626,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -639,7 +640,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -667,7 +668,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -681,7 +682,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -709,7 +710,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -723,7 +724,8 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -751,7 +753,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -765,7 +767,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -793,7 +795,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -807,7 +809,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -835,7 +837,7 @@
                         android:tag="player1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -849,7 +851,7 @@
                         android:tag="player2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
+                        android:background="@drawable/back"
                         android:inputType="number"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
