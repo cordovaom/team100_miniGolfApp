@@ -6,16 +6,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+
 import android.widget.ImageButton;
+
 
 public class MainActivity extends AppCompatActivity {
 private ImageButton settings_Button;
 
 
+    Button newGameButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        newGameButton = findViewById(R.id.newGameButton);
+
+
+        newGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext() , ScoreCard.class));
+            }
+        });
+
+
+
+
+
 
         settings_Button =(ImageButton) findViewById(R.id.settings);
         settings_Button.setOnClickListener(new View.OnClickListener() {
@@ -43,5 +66,6 @@ private ImageButton settings_Button;
     public void openScore(){
         Intent intent = new Intent(this,ScoreCard.class);
         startActivity(intent);
+
     }
 }

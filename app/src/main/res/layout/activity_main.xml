@@ -11,13 +11,17 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+
         android:layout_marginTop="16dp"
+
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-medium"
         android:text="MiniGolf 475"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#011305"
+        android:textColor="#D567635D"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,23 +30,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".07" />
 
+
     <TextView
         android:id="@+id/listOfGames"
         android:layout_width="200dp"
         android:layout_height="236dp"
+
+        android:layout_marginTop="60dp"
+        android:shadowColor="#D567635D"
+
         android:layout_marginTop="150dp"
         android:shadowColor="#F4F4F4"
+
         android:text="Recent Games"
         android:textAlignment="center"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintVertical_bias="0.0" />
+
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
     <Spinner
-        android:id="@+id/savedGamesDropDown"
+        android:id="@+id/courseNameMenu"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginBottom="150dp"
@@ -52,7 +68,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listOfGames" />
+        app:layout_constraintTop_toBottomOf="@+id/listOfGames"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/newGameButton"
@@ -62,15 +79,22 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/teal_700"
         android:text="New Game"
+
         android:textColor="#FFFFFF"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/savedGamesDropDown" />
+        app:layout_constraintTop_toBottomOf="@+id/courseNameMenu"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
+
+        android:id="@+id/settingsButtonMainActivity"
+
         android:id="@+id/settings"
+
         android:layout_width="54dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
