@@ -22,11 +22,7 @@ private ImageButton settings_Button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         newGameButton = findViewById(R.id.newGameButton);
-
-
         newGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,11 +31,6 @@ private ImageButton settings_Button;
             }
         });
 
-
-
-
-
-
         settings_Button =(ImageButton) findViewById(R.id.settings);
         settings_Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,13 +38,6 @@ private ImageButton settings_Button;
                 openSettings();
             }
         });
-
-
-
-
-
-
-
 
     }
 
