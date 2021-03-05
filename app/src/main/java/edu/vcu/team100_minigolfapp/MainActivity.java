@@ -10,11 +10,25 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 private ImageButton settings_Button;
+private Button new_game;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       new_game = findViewById(R.id.newGameButton);
+        new_game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openScore();
+            }
+        });
         settings_Button =(ImageButton) findViewById(R.id.settings);
+
+
+
+
+
+
         settings_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,5 +42,8 @@ public void openSettings(){
         intent.putExtra("playerOneWins", true);
         startActivity(intent);
 }
-
+    public void openScore(){
+        Intent intent = new Intent(this,ScoreCard.class);
+        startActivity(intent);
+    }
 }
