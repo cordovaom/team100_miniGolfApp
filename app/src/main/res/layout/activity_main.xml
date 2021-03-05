@@ -25,36 +25,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".07" />
 
-    <ImageView
-        android:id="@+id/settingsButton"
-        android:layout_width="36dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/appName"
-        app:layout_constraintHorizontal_bias="0.228"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gear" />
-
     <TextView
         android:id="@+id/listOfGames"
         android:layout_width="200dp"
         android:layout_height="236dp"
         android:layout_marginTop="60dp"
         android:shadowColor="#F4F4F4"
-        android:text="List Of All recent Games"
+        android:text="Recent Games"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appName" />
 
+
+    <Spinner
+        android:id="@+id/savedGamesDropDown"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listOfGames" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:iconTint="#DA5C5C"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="435dp" />
+        android:id="@+id/newGameButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="New Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savedGamesDropDown" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
