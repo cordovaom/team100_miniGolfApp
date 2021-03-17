@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Team100_miniGolfApp">
-        <activity android:name=".EditCourse"  android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name=".Courses"  android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Settings"  android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Results"  android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".ScoreCard"  android:windowSoftInputMode="adjustPan"/>
