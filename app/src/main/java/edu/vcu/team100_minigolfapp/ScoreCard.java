@@ -44,10 +44,14 @@ public class ScoreCard extends AppCompatActivity {
 
                 System.out.println("Player 1 Total: " + player1Total);
                 System.out.println("Player 2 Total: " + player2Total);
-                Boolean winner = (player1Total<player2Total);
+                String winner = ((player1Total<player2Total) ? "Player One" : (player2Total<player1Total) ? "Player Two":"Tie");
 
                 Intent intent = new Intent(v.getContext(), Results.class);
-                intent.putExtra("playerOneWins", winner);
+                intent.putExtra("winner", winner);
+                intent.putExtra("P1Name", "Player One");
+                intent.putExtra("P1Score", String.valueOf(player1Total));
+                intent.putExtra("P2Name", "Player Two");
+                intent.putExtra("P2Score", String.valueOf(player2Total));
                 startActivity(intent);
             }
         });

@@ -4,60 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
     tools:context=".Results">
+    <!--android:background="@drawable/background2"-->
+
 
     <Button
         android:id="@+id/resultsHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="203dp"
+        android:layout_height="62dp"
         android:backgroundTint="#ff8C00"
         android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
-
-
-    <ImageButton
-        android:id="@+id/resultsSettingsButton"
-        android:layout_width="54dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@android:drawable/ic_menu_manage" />
+        app:layout_constraintVertical_bias="0.846" />
 
     <TextView
-        android:id="@+id/playerOneView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/WinnerName"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
         android:text="@string/playerOne"
+        android:textAlignment="center"
         android:textSize="25dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/resultsHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286"/>
+        app:layout_constraintVertical_bias="0.211" />
 
     <TextView
-        android:id="@+id/playerTwoView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/playerTwo"
-        android:textSize="25dp"
-        android:visibility="invisible"
+        android:id="@+id/P1Name"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WinnerName" />
+
+    <TextView
+        android:id="@+id/P3Score"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P2Score" />
+
+    <TextView
+        android:id="@+id/P2Score"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P1Score" />
+
+    <TextView
+        android:id="@+id/P4Score"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P3Score" />
+
+    <TextView
+        android:id="@+id/P5Score"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/resultsHome"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P4Score"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/P1Score"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WinnerName" />
+
+    <TextView
+        android:id="@+id/P2Name"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintTop_toBottomOf="@+id/P1Name" />
+
+    <TextView
+        android:id="@+id/P5Name"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/resultsHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P4Name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/P4Name"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P3Name" />
+
+    <TextView
+        android:id="@+id/P3Name"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/back"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P2Name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

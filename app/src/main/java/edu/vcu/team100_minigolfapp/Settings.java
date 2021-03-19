@@ -19,14 +19,7 @@ public class Settings extends AppCompatActivity {
         //settings_Button =(ImageButton) findViewById(R.id.settings);
         course_Button =(Button) findViewById(R.id.courses_button);
 
-        //listener for courses button
-        course_Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openCourse();
 
-            }
-        });
         //listner for settings
 //        settings_Button.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -40,8 +33,5 @@ public class Settings extends AppCompatActivity {
 //        Intent intent = new Intent(this,Settings.class);
 //        startActivity(intent);
 //    }
-    public void openCourse(){
-        Intent intentTwo = new Intent(this,EditCourse.class);
-        startActivity(intentTwo);
-    }
+
 }
