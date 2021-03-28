@@ -77,6 +77,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -118,6 +146,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -163,6 +219,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -204,6 +288,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -249,6 +361,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -290,6 +430,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -335,6 +503,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -376,6 +572,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -421,6 +645,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -462,6 +714,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -507,6 +787,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -547,6 +855,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -591,6 +927,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -631,6 +995,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -676,6 +1068,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -716,6 +1136,34 @@
                         android:background="@drawable/back"
                         android:inputType="number"
                         android:tag="player2"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
@@ -760,6 +1208,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -802,6 +1278,34 @@
                         android:tag="player2"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player3Hole18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player3"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player4Hole18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/back"
+                        android:inputType="number"
+                        android:tag="player4"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
         </TableLayout>
@@ -825,7 +1329,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Hole"
+            android:text="@string/hole"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -836,8 +1340,7 @@
             android:gravity="center"
             android:text="Player 1"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:tag="player1" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/scorecardPlayer2Name"
@@ -846,8 +1349,7 @@
             android:gravity="center"
             android:text="Player 2"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:tag="player2" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/scorecardPlayer3Name"
@@ -856,8 +1358,7 @@
             android:gravity="center"
             android:text="Player 3"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:tag="player3" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/scorecardPlayer4Name"
@@ -866,8 +1367,7 @@
             android:gravity="center"
             android:text="Player 4"
             android:textAlignment="center"
-            android:textStyle="bold"
-            android:tag="player3" />
+            android:textStyle="bold" />
 
     </TableRow>
 
