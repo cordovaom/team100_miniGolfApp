@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ScoreCard extends AppCompatActivity {
 
@@ -70,8 +71,16 @@ public class ScoreCard extends AppCompatActivity {
                  */
 
                 int min = Math.min(Math.min(player1Total, player2Total), Math.min(player3Total, player4Total));
+                ArrayList<Integer> totals = new ArrayList<>();
+                totals.add(player1Total);
+                totals.add(player2Total);
+                totals.add(player3Total);
+                totals.add(player4Total);
 
-                String winner = ((min==player1Total) ? "Player One" : (min==player2Total) ? "Player Two" : (min==player3Total) ? "Player Three" : (min==player4Total) ? "Player Four":"Tie");
+                String winner = ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? "Player One" :
+                        (min==player2Total && Collections.frequency(totals, player2Total)==1) ? "Player Two" :
+                                (min==player3Total && Collections.frequency(totals, player3Total)==1) ? "Player Three" :
+                                        (min==player4Total && Collections.frequency(totals, player4Total)==1) ? "Player Four":"Tie");
 
                 Intent intent = new Intent(v.getContext(), Results.class);
                 intent.putExtra("winner", winner);
