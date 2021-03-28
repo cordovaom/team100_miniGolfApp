@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/winnerIcon"
         android:layout_width="158dp"
         android:layout_height="135dp"
         android:contentDescription="TODO"
@@ -38,7 +38,7 @@
         android:id="@+id/WinnerName"
         android:layout_width="216dp"
         android:layout_height="40dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="176dp"
         android:text="@string/playerOne"
         android:textAlignment="center"
         android:textColor="#4d009a"

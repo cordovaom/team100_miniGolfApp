@@ -33,12 +33,14 @@ public class Results extends AppCompatActivity {
             ((TextView)findViewById(R.id.P2Name)).setText(P2Name);
             ((TextView)findViewById(R.id.P1Score)).setText(P1Score);
             ((TextView)findViewById(R.id.P2Score)).setText(P2Score);
+            ((View)findViewById(R.id.winnerIcon)).setVisibility(View.VISIBLE);
         } else {
             ((TextView)findViewById(R.id.WinnerName)).setText("Tie Game");
             ((TextView)findViewById(R.id.P1Name)).setText(P2Name);
             ((TextView)findViewById(R.id.P2Name)).setText(P1Name);
             ((TextView)findViewById(R.id.P1Score)).setText(P2Score);
             ((TextView)findViewById(R.id.P2Score)).setText(P1Score);
+            ((View)findViewById(R.id.winnerIcon)).setVisibility(View.INVISIBLE);
         }
 
         Button home = findViewById(R.id.resultsHome);
@@ -46,6 +48,7 @@ public class Results extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ((TextView)findViewById(R.id.WinnerName)).setText("");
+                //((View)findViewById(R.id.winnerIcon)).setVisibility(View.INVISIBLE);
                 Intent intent = new Intent(v.getContext(), MainActivity.class);
                 startActivity(intent);
             }
