@@ -71,7 +71,7 @@ public class ScoreCard extends AppCompatActivity {
 
                 int min = Math.min(Math.min(player1Total, player2Total), Math.min(player3Total, player4Total));
 
-                String winner = ((min==player1Total) ? "Player One" : (min==player2Total) ? "Player Two" : (min==player3Total) ? "Player Three" : (min==player4Total) ? "Player Four":"");
+                String winner = ((min==player1Total) ? "Player One" : (min==player2Total) ? "Player Two" : (min==player3Total) ? "Player Three" : (min==player4Total) ? "Player Four":"Tie");
 
                 Intent intent = new Intent(v.getContext(), Results.class);
                 intent.putExtra("winner", winner);
