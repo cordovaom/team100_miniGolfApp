@@ -16,7 +16,7 @@ public class ScoreCard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_card);
-        Button done = findViewById(R.id.scorecardDone);
+        Button done = findViewById(R.id.scorecardFinish);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
