@@ -26,7 +26,7 @@ public class Results extends AppCompatActivity {
         String P4Score = getIntent().getStringExtra("P4Score");
 
         if(!winner.equals("Tie")){
-            ((TextView)findViewById(R.id.WinnerName)).setText(winner + " Wins");
+            ((TextView)findViewById(R.id.WinnerName)).setText(String.format("%s Wins", winner));
             ((TextView)findViewById(R.id.P1Name)).setText(P1Name);
             ((TextView)findViewById(R.id.P2Name)).setText(P2Name);
             ((TextView)findViewById(R.id.P3Name)).setText(P3Name);
@@ -37,7 +37,7 @@ public class Results extends AppCompatActivity {
             ((TextView)findViewById(R.id.P4Score)).setText(P4Score);
             ((View)findViewById(R.id.winnerIcon)).setVisibility(View.VISIBLE);
         } else {
-            ((TextView)findViewById(R.id.WinnerName)).setText("Tie Game");
+            ((TextView)findViewById(R.id.WinnerName)).setText(getString(R.string.tie));
             ((TextView)findViewById(R.id.P1Name)).setText(P1Name);
             ((TextView)findViewById(R.id.P2Name)).setText(P2Name);
             ((TextView)findViewById(R.id.P3Name)).setText(P3Name);

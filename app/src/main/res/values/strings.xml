@@ -6,8 +6,7 @@
     <string name="par">Par</string>
     <string name="save">Save</string>
 
-    <string name="playerOne">Player One Wins</string>
-    <string name="playerTwo">Player Two Wins</string>
+    <string name="tie">Tie Game</string>
 
     <string name="hole">Hole</string>
     <string name="one">1</string>

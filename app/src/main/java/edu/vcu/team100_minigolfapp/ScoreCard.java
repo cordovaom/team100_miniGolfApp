@@ -95,10 +95,10 @@ public class ScoreCard extends AppCompatActivity {
                 totals.add(player3Total);
                 totals.add(player4Total);
 
-                String winner = ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? "Player One" :
-                        (min==player2Total && Collections.frequency(totals, player2Total)==1) ? "Player Two" :
-                                (min==player3Total && Collections.frequency(totals, player3Total)==1) ? "Player Three" :
-                                        (min==player4Total && Collections.frequency(totals, player4Total)==1) ? "Player Four":"Tie");
+                String winner = ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? player1Name:
+                        (min==player2Total && Collections.frequency(totals, player2Total)==1) ? player2Name :
+                                (min==player3Total && Collections.frequency(totals, player3Total)==1) ? player3Name :
+                                        (min==player4Total && Collections.frequency(totals, player4Total)==1) ? player4Name:"Tie");
 
                 Intent intent = new Intent(v.getContext(), Results.class);
                 intent.putExtra("winner", winner);
