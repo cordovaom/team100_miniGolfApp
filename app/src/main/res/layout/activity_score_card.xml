@@ -48,6 +48,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/one"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -119,6 +120,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/two"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -190,6 +192,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/three"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -261,6 +264,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/four"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -332,6 +336,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/five"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -403,6 +408,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/six"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -474,6 +480,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/seven"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -545,6 +552,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/eight"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -616,6 +624,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/nine"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -687,6 +696,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/ten"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -758,6 +768,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/eleven"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -828,6 +839,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/twelve"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -898,6 +910,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/thirteen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -968,6 +981,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/fourteen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -1038,6 +1052,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/fifteen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -1109,6 +1124,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/sixteen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -1179,6 +1195,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/seventeen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -1249,6 +1266,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/eighteen"
+                    android:textColor="#4d009a"
                     android:textAlignment="center" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -1330,6 +1348,7 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/hole"
+            android:textColor="#4d009a"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -1338,7 +1357,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Player 1"
+            android:textColor="#4d009a"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -1347,7 +1366,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Player 2"
+            android:textColor="#4d009a"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -1356,7 +1375,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Player 3"
+            android:textColor="#4d009a"
             android:textAlignment="center"
             android:textStyle="bold" />
 
@@ -1365,7 +1384,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="Player 4"
+            android:textColor="#4d009a"
             android:textAlignment="center"
             android:textStyle="bold" />
 

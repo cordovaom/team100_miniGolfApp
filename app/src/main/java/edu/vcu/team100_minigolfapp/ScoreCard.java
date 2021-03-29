@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
 import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,6 +19,22 @@ public class ScoreCard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_card);
+
+        String player1Name = getIntent().getStringExtra("playerOne");
+        String player2Name = getIntent().getStringExtra("playerTwo");
+        String player3Name = getIntent().getStringExtra("playerThree");
+        String player4Name = getIntent().getStringExtra("playerFour");
+
+        System.out.println("Scorecard player1Name: " + player1Name);
+        System.out.println("Scorecard player2Name: " + player2Name);
+        System.out.println("Scorecard player3Name: " + player3Name);
+        System.out.println("Scorecard player4Name: " + player4Name);
+
+        ((TextView)findViewById(R.id.scorecardPlayer1Name)).setText(player1Name);
+        ((TextView)findViewById(R.id.scorecardPlayer2Name)).setText(player2Name);
+        ((TextView)findViewById(R.id.scorecardPlayer3Name)).setText(player3Name);
+        ((TextView)findViewById(R.id.scorecardPlayer4Name)).setText(player4Name);
+
         Button done = findViewById(R.id.scorecardFinish);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,13 +102,13 @@ public class ScoreCard extends AppCompatActivity {
 
                 Intent intent = new Intent(v.getContext(), Results.class);
                 intent.putExtra("winner", winner);
-                intent.putExtra("P1Name", "Player One");
+                intent.putExtra("P1Name", player1Name);
                 intent.putExtra("P1Score", String.valueOf(player1Total));
-                intent.putExtra("P2Name", "Player Two");
+                intent.putExtra("P2Name", player2Name);
                 intent.putExtra("P2Score", String.valueOf(player2Total));
-                intent.putExtra("P3Name", "Player Three");
+                intent.putExtra("P3Name", player3Name);
                 intent.putExtra("P3Score", String.valueOf(player3Total));
-                intent.putExtra("P4Name", "Player Four");
+                intent.putExtra("P4Name", player4Name);
                 intent.putExtra("P4Score", String.valueOf(player4Total));
                 startActivity(intent);
             }
