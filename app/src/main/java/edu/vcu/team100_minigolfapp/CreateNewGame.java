@@ -6,12 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class CreateNewGame extends AppCompatActivity {
 
     Button startGameButton;
     ImageButton settingsButtonNewGame;
+    EditText player1;
+    EditText player2;
+    EditText player3;
+    EditText player4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +26,27 @@ public class CreateNewGame extends AppCompatActivity {
 
         startGameButton = findViewById(R.id.startGameButton);
         settingsButtonNewGame = findViewById(R.id.settingButtonNewGame);
+        player1 = findViewById(R.id.playerOneNameInput);
+        player2 = findViewById(R.id.playerTwoNameInput);
+        player3 = findViewById(R.id.playerThreeNameInput);
+        player4 = findViewById(R.id.playerFourNameInput);
+
+        String playerOneName = player1.getText().toString();
+        String playerTwoName = player1.getText().toString();
+        String playerThreeName = player1.getText().toString();
+        String playerFourName = player1.getText().toString();
+
 
         startGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(), ScoreCard.class));
+                Intent intent = new Intent(view.getContext(),ScoreCard.class);
+                intent.putExtra("playerOne", playerOneName);
+                intent.putExtra("playerTwo", playerTwoName);
+                intent.putExtra("playerThree", playerThreeName);
+                intent.putExtra("playerFour", playerFourName);
+
+                startActivity(intent);
             }
         });
 
