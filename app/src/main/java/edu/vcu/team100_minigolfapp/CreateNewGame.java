@@ -26,20 +26,22 @@ public class CreateNewGame extends AppCompatActivity {
 
         startGameButton = findViewById(R.id.startGameButton);
         settingsButtonNewGame = findViewById(R.id.settingButtonNewGame);
-        player1 = findViewById(R.id.playerOneNameInput);
-        player2 = findViewById(R.id.playerTwoNameInput);
-        player3 = findViewById(R.id.playerThreeNameInput);
-        player4 = findViewById(R.id.playerFourNameInput);
 
-        String playerOneName = player1.getText().toString();
-        String playerTwoName = player1.getText().toString();
-        String playerThreeName = player1.getText().toString();
-        String playerFourName = player1.getText().toString();
 
 
         startGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                player1 = findViewById(R.id.playerOneNameInput);
+                player2 = findViewById(R.id.playerTwoNameInput);
+                player3 = findViewById(R.id.playerThreeNameInput);
+                player4 = findViewById(R.id.playerFourNameInput);
+                String playerOneName = player1.getText().toString();
+                String playerTwoName = player2.getText().toString();
+                String playerThreeName = player3.getText().toString();
+                String playerFourName = player4.getText().toString();
+
                 Intent intent = new Intent(view.getContext(),ScoreCard.class);
                 intent.putExtra("playerOne", playerOneName);
                 intent.putExtra("playerTwo", playerTwoName);
