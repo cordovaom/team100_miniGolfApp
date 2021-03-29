@@ -15,7 +15,9 @@
         android:layout_height="40dp"
         android:layout_marginBottom="116dp"
         android:backgroundTint="#4d009a"
+        android:fontFamily="@font/brawler"
         android:text="@string/home"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -39,6 +41,7 @@
         android:layout_width="216dp"
         android:layout_height="40dp"
         android:layout_marginTop="176dp"
+        android:fontFamily="@font/brawler"
         android:textAlignment="center"
         android:textColor="#4d009a"
         android:textSize="25dp"
@@ -66,6 +69,7 @@
                 android:layout_width="108dp"
                 android:layout_height="40dp"
                 android:background="@drawable/back"
+                android:fontFamily="@font/brawler"
                 android:textAlignment="center"
                 android:textColor="#4d009a" />
 
@@ -74,6 +78,7 @@
                 android:layout_width="108dp"
                 android:layout_height="40dp"
                 android:background="@drawable/back"
+                android:fontFamily="@font/brawler"
                 android:textAlignment="center"
                 android:textColor="#4d009a" />
         </TableRow>
@@ -88,6 +93,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/back"
                 android:textAlignment="center"
+                android:fontFamily="@font/brawler"
                 android:textColor="#4d009a"
                 tools:layout_editor_absoluteX="84dp"
                 tools:layout_editor_absoluteY="492dp" />
@@ -97,6 +103,7 @@
                 android:layout_width="108dp"
                 android:layout_height="40dp"
                 android:background="@drawable/back"
+                android:fontFamily="@font/brawler"
                 android:textAlignment="center"
                 android:textColor="#4d009a"
                 tools:layout_editor_absoluteX="197dp"
@@ -114,6 +121,7 @@
                 android:background="@drawable/back"
                 android:textAlignment="center"
                 android:textColor="#4d009a"
+                android:fontFamily="@font/brawler"
                 tools:layout_editor_absoluteX="84dp"
                 tools:layout_editor_absoluteY="540dp" />
 
@@ -124,6 +132,7 @@
                 android:background="@drawable/back"
                 android:textAlignment="center"
                 android:textColor="#4d009a"
+                android:fontFamily="@font/brawler"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="540dp" />
         </TableRow>
@@ -138,6 +147,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/back"
                 android:textAlignment="center"
+                android:fontFamily="@font/brawler"
                 android:textColor="#4d009a"
                 tools:layout_editor_absoluteX="84dp"
                 tools:layout_editor_absoluteY="584dp" />
@@ -148,6 +158,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/back"
                 android:textAlignment="center"
+                android:fontFamily="@font/brawler"
                 android:textColor="#4d009a"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="584dp" />
