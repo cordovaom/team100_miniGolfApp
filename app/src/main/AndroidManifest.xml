@@ -9,11 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Team100_miniGolfApp">
-        <activity android:name=".Settings"  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".Results"  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".ScoreCard"  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".CreateNewGame"  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".MainActivity"  android:windowSoftInputMode="adjustPan">
+        <activity
+            android:name=".Settings"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Results"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ScoreCard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CreateNewGame"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

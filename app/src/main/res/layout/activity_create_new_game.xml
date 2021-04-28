@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4c9a00"
+    android:orientation="horizontal"
     tools:context=".CreateNewGame">
 
     <TextView
@@ -45,7 +46,7 @@
         android:id="@+id/playerOneBanner"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="124dp"
         android:fontFamily="@font/brawler"
         android:text="Player 1"
         android:textAlignment="center"
@@ -60,7 +61,7 @@
         android:id="@+id/playerOneNameInput"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="124dp"
         android:ems="10"
         android:fontFamily="@font/brawler"
         android:inputType="textPersonName"
@@ -161,7 +162,7 @@
         android:id="@+id/startGameButton"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="75dp"
         android:backgroundTint="#4d009a"
         android:fontFamily="@font/brawler"
         android:text="Start"
@@ -172,5 +173,48 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playerFourNameInput" />
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroup"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createGameBanner">
+
+        <RadioButton
+            android:id="@+id/OnePlayerSelected"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="1"
+            android:textColor="#4D009A" />
+
+        <RadioButton
+            android:id="@+id/TwoPlayerSelected"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#4D009A" />
+
+        <RadioButton
+            android:id="@+id/threePlayerSelected"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:textColor="#4D009A" />
+
+        <RadioButton
+            android:id="@+id/FourPlayerSelected"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:textColor="#4D009A" />
+
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
