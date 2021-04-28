@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class CreateNewGame extends AppCompatActivity {
 
@@ -18,6 +20,12 @@ public class CreateNewGame extends AppCompatActivity {
     EditText player3;
     EditText player4;
 
+    RadioGroup numPlayers;
+    RadioButton onePlayer;
+    RadioButton twoPlayers;
+    RadioButton threePlayers;
+    RadioButton fourPlayers;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +34,15 @@ public class CreateNewGame extends AppCompatActivity {
 
         startGameButton = findViewById(R.id.startGameButton);
         settingsButtonNewGame = findViewById(R.id.settingButtonNewGame);
+
+        //radio button group
+        numPlayers = (RadioGroup) findViewById(R.id.radioButtonGroup);
+
+        onePlayer = (RadioButton) findViewById(R.id.OnePlayerSelected);
+        twoPlayers = (RadioButton) findViewById(R.id.TwoPlayerSelected);
+        threePlayers = (RadioButton) findViewById(R.id.threePlayerSelected);
+        fourPlayers = (RadioButton) findViewById(R.id.FourPlayerSelected);
+        
 
 
 
