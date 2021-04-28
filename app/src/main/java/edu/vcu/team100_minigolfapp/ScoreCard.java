@@ -88,12 +88,24 @@ public class ScoreCard extends AppCompatActivity {
                 System.out.println("Player 4 Total: " + player4Total);
                  */
 
-                int min = Math.min(Math.min(player1Total, player2Total), Math.min(player3Total, player4Total));
                 ArrayList<Integer> totals = new ArrayList<>();
-                totals.add(player1Total);
-                totals.add(player2Total);
-                totals.add(player3Total);
-                totals.add(player4Total);
+                if (player1Total != 0) {
+                    totals.add(player1Total);
+                }
+                if (player2Total != 0) {
+                    totals.add(player2Total);
+                }
+                if (player3Total != 0) {
+                    totals.add(player3Total);
+                }
+                if (player4Total != 0) {
+                    totals.add(player4Total);
+                }
+
+                int min=totals.get(0);
+                for(int i = 0; i < totals.size(); i++)
+                    if(totals.get(i) < min)
+                            min = totals.get(i);
 
                 String winner = ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? player1Name:
                         (min==player2Total && Collections.frequency(totals, player2Total)==1) ? player2Name :
