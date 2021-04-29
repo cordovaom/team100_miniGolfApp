@@ -54,10 +54,85 @@ public class CreateNewGame extends AppCompatActivity {
                 player2 = findViewById(R.id.playerTwoNameInput);
                 player3 = findViewById(R.id.playerThreeNameInput);
                 player4 = findViewById(R.id.playerFourNameInput);
+
+                int  radID = numPlayers.getCheckedRadioButtonId();
+                 RadioButton radioButton;
+                radioButton = (RadioButton) findViewById(radID);
+
+                CharSequence val = radioButton.getText();
+
+                int number = Integer.parseInt(val.toString());
+
+
                 String playerOneName = player1.getText().toString();
                 String playerTwoName = player2.getText().toString();
                 String playerThreeName = player3.getText().toString();
                 String playerFourName = player4.getText().toString();
+
+                //MADE radio buttons do something
+                if (number == 1 && (player1.getText().length() ==0) ){
+                    playerOneName = "Player One";
+                    playerTwoName= "";
+                    playerThreeName = "";
+                    playerFourName = "";
+                }
+
+
+
+
+                if (number == 2  ){
+                    if((player1.getText().length() ==0) ){
+                        playerOneName = "Player One";
+
+                    }
+                    if((player2.getText().length() ==0) ){
+                        playerTwoName= "Player Two";
+                    }
+                    //cant have more than 2
+                    playerThreeName = "";
+                    playerFourName = "";
+                }
+
+
+                if (number == 3  ){
+                    if((player1.getText().length() ==0) ){
+                        playerOneName = "Player One";
+
+                    }
+                    if((player2.getText().length() ==0) ){
+                        playerTwoName= "Player Two";
+                    }
+
+                    if((player3.getText().length() ==0) ){
+                        playerThreeName = "Player Three";
+
+                    }
+
+                    //only 3
+                    playerFourName = "";
+
+                }
+                if (number == 4  ){
+                    if((player1.getText().length() ==0) ){
+                        playerOneName = "Player One";
+
+                    }
+                    if((player2.getText().length() ==0) ){
+                        playerTwoName= "Player Two";
+                    }
+
+                    if((player3.getText().length() ==0) ){
+                        playerThreeName = "Player Three";
+
+                    }
+                    if((player4.getText().length() ==0) ){
+                        playerFourName = "Player Four";
+                    }
+
+
+                }
+
+
 
                 Intent intent = new Intent(view.getContext(),ScoreCard.class);
                 intent.putExtra("playerOne", playerOneName);
