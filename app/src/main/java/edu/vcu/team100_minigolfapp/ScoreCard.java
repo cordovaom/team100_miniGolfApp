@@ -104,6 +104,7 @@ public class ScoreCard extends AppCompatActivity {
                 int player3Total = 0;
                 int player4Total = 0;
 
+
                 ArrayList<View> player1HoleViews = getViewsByTag(scorecard, "player1");
                 for(int i = 0; i < player1HoleViews.size(); i++) {
                     View view = player1HoleViews.get(i);
@@ -154,6 +155,10 @@ public class ScoreCard extends AppCompatActivity {
                     totals.add(player4Total);
                 }
 
+                //keep app from crashing
+                if(totals.size() == 0){
+                    totals.add(0);
+                }
                 int min=totals.get(0);
                 for(int i = 0; i < totals.size(); i++)
                     if(totals.get(i) < min)
