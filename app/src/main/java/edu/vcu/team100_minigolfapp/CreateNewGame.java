@@ -33,7 +33,7 @@ public class CreateNewGame extends AppCompatActivity {
         setContentView(R.layout.activity_create_new_game);
 
         startGameButton = findViewById(R.id.startGameButton);
-        settingsButtonNewGame = findViewById(R.id.settingButtonNewGame);
+        //settingsButtonNewGame = findViewById(R.id.settingButtonNewGame);
 
         //radio button group
         numPlayers = (RadioGroup) findViewById(R.id.radioButtonGroup);
@@ -69,12 +69,12 @@ public class CreateNewGame extends AppCompatActivity {
             }
         });
 
-        settingsButtonNewGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(view.getContext(), Settings.class));
-            }
-        });
+       // settingsButtonNewGame.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View view) {
+         //       startActivity(new Intent(view.getContext(), Settings.class));
+        //    }
+      //  });
 
 
     }

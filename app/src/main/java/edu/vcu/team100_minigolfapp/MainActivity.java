@@ -31,13 +31,13 @@ private ImageButton settings_Button;
             }
         });
 
-        settings_Button =(ImageButton) findViewById(R.id.settings);
-        settings_Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettings();
-            }
-        });
+       // settings_Button =(ImageButton) findViewById(R.id.settings);
+      //  settings_Button.setOnClickListener(new View.OnClickListener() {
+         //   @Override
+           // public void onClick(View v) {
+           //     openSettings();
+           // }
+     //   });
 
     }
 
