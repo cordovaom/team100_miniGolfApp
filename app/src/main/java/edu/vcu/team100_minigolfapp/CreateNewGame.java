@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class CreateNewGame extends AppCompatActivity {
 
@@ -19,6 +22,11 @@ public class CreateNewGame extends AppCompatActivity {
     EditText player2;
     EditText player3;
     EditText player4;
+
+    TextView playerOneText;
+    TextView playerTwoText;
+    TextView playerThreeText;
+    TextView playerFourText;
 
     RadioGroup numPlayers;
     RadioButton onePlayer;
@@ -42,21 +50,80 @@ public class CreateNewGame extends AppCompatActivity {
         twoPlayers = (RadioButton) findViewById(R.id.TwoPlayerSelected);
         threePlayers = (RadioButton) findViewById(R.id.threePlayerSelected);
         fourPlayers = (RadioButton) findViewById(R.id.FourPlayerSelected);
-        
 
+
+        player1 = findViewById(R.id.playerOneNameInput);
+        player2 = findViewById(R.id.playerTwoNameInput);
+        player3 = findViewById(R.id.playerThreeNameInput);
+        player4 = findViewById(R.id.playerFourNameInput);
+
+        playerOneText = findViewById(R.id.playerOneBanner);
+        playerTwoText = findViewById(R.id.playerTwoBanner);
+        playerThreeText = findViewById(R.id.playerThreeBanner);
+        playerFourText = findViewById(R.id.playerFourNameBanner);
+
+
+        numPlayers.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId == R.id.OnePlayerSelected){
+                    player1.setVisibility(View.VISIBLE);
+                    player2.setVisibility(View.INVISIBLE);
+                    player3.setVisibility(View.INVISIBLE);
+                    player4.setVisibility(View.INVISIBLE);
+
+                    playerOneText.setVisibility(View.VISIBLE);
+                    playerTwoText.setVisibility(View.INVISIBLE);
+                    playerThreeText.setVisibility(View.INVISIBLE);
+                    playerFourText.setVisibility(View.INVISIBLE);
+
+                }
+                else if(checkedId == R.id.TwoPlayerSelected){
+                    player1.setVisibility(View.VISIBLE);
+                    player2.setVisibility(View.VISIBLE);
+                    player3.setVisibility(View.INVISIBLE);
+                    player4.setVisibility(View.INVISIBLE);
+
+
+                    playerOneText.setVisibility(View.VISIBLE);
+                    playerTwoText.setVisibility(View.VISIBLE);
+                    playerThreeText.setVisibility(View.INVISIBLE);
+                    playerFourText.setVisibility(View.INVISIBLE);
+
+                }else if(checkedId == R.id.threePlayerSelected){
+                    player1.setVisibility(View.VISIBLE);
+                    player2.setVisibility(View.VISIBLE);
+                    player3.setVisibility(View.VISIBLE);
+                    player4.setVisibility(View.INVISIBLE);
+
+                    playerOneText.setVisibility(View.VISIBLE);
+                    playerTwoText.setVisibility(View.VISIBLE);
+                    playerThreeText.setVisibility(View.VISIBLE);
+                    playerFourText.setVisibility(View.INVISIBLE);
+
+                }else if(checkedId == R.id.FourPlayerSelected){
+                    player1.setVisibility(View.VISIBLE);
+                    player2.setVisibility(View.VISIBLE);
+                    player3.setVisibility(View.VISIBLE);
+                    player4.setVisibility(View.VISIBLE);
+
+                    playerOneText.setVisibility(View.VISIBLE);
+                    playerTwoText.setVisibility(View.VISIBLE);
+                    playerThreeText.setVisibility(View.VISIBLE);
+                    playerFourText.setVisibility(View.VISIBLE);
+
+                }
+            }
+        });
 
 
         startGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                player1 = findViewById(R.id.playerOneNameInput);
-                player2 = findViewById(R.id.playerTwoNameInput);
-                player3 = findViewById(R.id.playerThreeNameInput);
-                player4 = findViewById(R.id.playerFourNameInput);
 
                 int  radID = numPlayers.getCheckedRadioButtonId();
-                 RadioButton radioButton;
+                RadioButton radioButton;
                 radioButton = (RadioButton) findViewById(radID);
 
                 CharSequence val = radioButton.getText();
@@ -71,6 +138,8 @@ public class CreateNewGame extends AppCompatActivity {
 
                 //MADE radio buttons do something
                 if (number == 1 && (player1.getText().length() ==0) ){
+
+
                     playerOneName = "Player One";
                     playerTwoName= "";
                     playerThreeName = "";
@@ -81,6 +150,7 @@ public class CreateNewGame extends AppCompatActivity {
 
 
                 if (number == 2  ){
+
                     if((player1.getText().length() ==0) ){
                         playerOneName = "Player One";
 
