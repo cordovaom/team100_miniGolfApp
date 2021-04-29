@@ -155,6 +155,10 @@ public class ScoreCard extends AppCompatActivity {
                     totals.add(player4Total);
                 }
 
+                //keep app from crashing
+                if(totals.size() == 0){
+                    totals.add(0);
+                }
                 int min=totals.get(0);
                 for(int i = 0; i < totals.size(); i++)
                     if(totals.get(i) < min)
