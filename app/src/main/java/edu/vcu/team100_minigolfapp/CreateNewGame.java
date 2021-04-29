@@ -137,10 +137,13 @@ public class CreateNewGame extends AppCompatActivity {
                 String playerFourName = player4.getText().toString();
 
                 //MADE radio buttons do something
-                if (number == 1 && (player1.getText().length() ==0) ){
+                if (number == 1 ){
 
+                    if((player1.getText().length() ==0) ){
+                        playerOneName = "Player One";
 
-                    playerOneName = "Player One";
+                    }
+
                     playerTwoName= "";
                     playerThreeName = "";
                     playerFourName = "";
