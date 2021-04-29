@@ -69,7 +69,6 @@ public class Results extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // ((TextView)findViewById(R.id.WinnerName)).setText("");
                 Intent intent = new Intent(v.getContext(), MainActivity.class);
                 startActivity(intent);
             }

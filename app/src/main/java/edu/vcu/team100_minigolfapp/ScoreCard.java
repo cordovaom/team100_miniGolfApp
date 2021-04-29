@@ -164,7 +164,7 @@ public class ScoreCard extends AppCompatActivity {
                     if(totals.get(i) < min)
                             min = totals.get(i);
 
-                String winner = ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? player1Name:
+                String winner = (min==0 && player2Name.length() != 0) ? "Tie": ((min==player1Total && Collections.frequency(totals, player1Total)==1) ? player1Name:
                         (min==player2Total && Collections.frequency(totals, player2Total)==1) ? player2Name :
                                 (min==player3Total && Collections.frequency(totals, player3Total)==1) ? player3Name :
                                         (min==player4Total && Collections.frequency(totals, player4Total)==1) ? player4Name:"Tie");
