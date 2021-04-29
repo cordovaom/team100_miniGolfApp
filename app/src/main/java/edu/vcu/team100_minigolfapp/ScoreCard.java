@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -25,15 +26,73 @@ public class ScoreCard extends AppCompatActivity {
         String player3Name = getIntent().getStringExtra("playerThree");
         String player4Name = getIntent().getStringExtra("playerFour");
 
-        System.out.println("Scorecard player1Name: " + player1Name);
-        System.out.println("Scorecard player2Name: " + player2Name);
-        System.out.println("Scorecard player3Name: " + player3Name);
-        System.out.println("Scorecard player4Name: " + player4Name);
+        ViewGroup scorecard = findViewById(R.id.scrollView2);
+        ArrayList<View> player1HoleViews = getViewsByTag(scorecard, "player1");
+        ArrayList<View> player2HoleViews = getViewsByTag(scorecard, "player2");
+        ArrayList<View> player3HoleViews = getViewsByTag(scorecard, "player3");
+        ArrayList<View> player4HoleViews = getViewsByTag(scorecard, "player4");
 
         ((TextView)findViewById(R.id.scorecardPlayer1Name)).setText(player1Name);
-        ((TextView)findViewById(R.id.scorecardPlayer2Name)).setText(player2Name);
-        ((TextView)findViewById(R.id.scorecardPlayer3Name)).setText(player3Name);
-        ((TextView)findViewById(R.id.scorecardPlayer4Name)).setText(player4Name);
+        // Restricts input for scores
+        for(int i = 0; i < player1HoleViews.size(); i++) {
+            View view = player1HoleViews.get(i);
+            TextInputEditText player1HoleEditText = findViewById(view.getId());
+            player1HoleEditText.setFilters(new InputFilter[]{ new InputFilterMinMax(1, 99)});
+        }
+
+        // Disables player score column if no name was entered
+        // Or restricts input for scores
+        if(player2Name.equals("")) {
+            ((TextView)findViewById(R.id.scorecardPlayer2Name)).setVisibility(View.INVISIBLE);
+            for(int i = 0; i < player2HoleViews.size(); i++) {
+                View view = player2HoleViews.get(i);
+                view.setVisibility(View.GONE);
+            }
+        }
+        else {
+            ((TextView)findViewById(R.id.scorecardPlayer2Name)).setText(player2Name);
+            for(int i = 0; i < player2HoleViews.size(); i++) {
+                View view = player2HoleViews.get(i);
+                TextInputEditText player2HoleEditText = findViewById(view.getId());
+                player2HoleEditText.setFilters(new InputFilter[]{ new InputFilterMinMax(1, 99)});
+            }
+        }
+
+        // Disables player score column if no name was entered
+        // Or restricts input for scores
+        if(player3Name.equals("")) {
+            ((TextView)findViewById(R.id.scorecardPlayer3Name)).setVisibility(View.INVISIBLE);
+            for(int i = 0; i < player3HoleViews.size(); i++) {
+                View view = player3HoleViews.get(i);
+                view.setVisibility(View.GONE);
+            }
+        }
+        else {
+            ((TextView)findViewById(R.id.scorecardPlayer3Name)).setText(player3Name);
+            for(int i = 0; i < player3HoleViews.size(); i++) {
+                View view = player3HoleViews.get(i);
+                TextInputEditText player3HoleEditText = findViewById(view.getId());
+                player3HoleEditText.setFilters(new InputFilter[]{ new InputFilterMinMax(1, 99)});
+            }
+        }
+
+        // Disables player score column if no name was entered
+        // Or restricts input for scores
+        if(player4Name.equals("")) {
+            ((TextView)findViewById(R.id.scorecardPlayer4Name)).setVisibility(View.INVISIBLE);
+            for(int i = 0; i < player4HoleViews.size(); i++) {
+                View view = player4HoleViews.get(i);
+                view.setVisibility(View.GONE);
+            }
+        }
+        else {
+            ((TextView)findViewById(R.id.scorecardPlayer4Name)).setText(player4Name);
+            for(int i = 0; i < player4HoleViews.size(); i++) {
+                View view = player4HoleViews.get(i);
+                TextInputEditText player4HoleEditText = findViewById(view.getId());
+                player4HoleEditText.setFilters(new InputFilter[]{ new InputFilterMinMax(1, 99)});
+            }
+        }
 
         Button done = findViewById(R.id.scorecardFinish);
         done.setOnClickListener(new View.OnClickListener() {
@@ -80,13 +139,6 @@ public class ScoreCard extends AppCompatActivity {
                     int player4HoleScore = (player4HoleText.isEmpty()) ? 0:Integer.parseInt(player4HoleText);
                     player4Total += player4HoleScore;
                 }
-
-                /* Print statements for debugging purposes
-                System.out.println("Player 1 Total: " + player1Total);
-                System.out.println("Player 2 Total: " + player2Total);
-                System.out.println("Player 3 Total: " + player3Total);
-                System.out.println("Player 4 Total: " + player4Total);
-                 */
 
                 ArrayList<Integer> totals = new ArrayList<>();
                 if (player1Total != 0) {

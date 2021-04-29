@@ -26,6 +26,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="303dp"
         android:layout_height="450dp"
+        android:fadeScrollbars="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
